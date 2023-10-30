@@ -1,0 +1,53 @@
+.centered {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 10000;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  animation: fadein 1s;
+
+  border-radius: 10px;
+
+  :global(.hiddenByPosition) & {
+    display: none !important;
+  }
+
+  > :global(.sk-spinner) {
+    background: white;
+    padding: 15px;
+    border-radius: 50%;
+    height: 115px;
+    width: 115px;
+  }
+
+  .color {
+    > div {
+      color: #fff !important;
+    }
+  }
+}
+
+.small {
+  > div {
+    width: 3px !important;
+    margin: 0 2px !important;
+    height: 12px !important;
+  }
+}
+
+.extraSmall {
+  > div {
+    width: 1px !important;
+    margin: 0 2px !important;
+    height: 10px !important;
+  }
+}
+
+.big {
+  > div {
+    height: 75px !important;
+    width: 6px !important;
+    margin: 4px !important;
+  }
+}
